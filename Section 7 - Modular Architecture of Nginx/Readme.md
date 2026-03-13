@@ -15,5 +15,5 @@ https://www.udemy.com/course/nginx-beginner-to-advanced/?referralCode=3A7B5928F3
 
 
    [PlDa]: <./compile-nginx.md>
-   [PlDb]: <./dynamic-module.md>
+   [PlDb]: <./dynamic-modules.md>
 

@@ -9,7 +9,7 @@ apt update && apt install nginx -y
 ### Step 1 - Install Mod Security
 
 ```sh
-apt install nginx libnginx-mod-http-modsecurity modsecurity-crs -y
+apt install libnginx-mod-http-modsecurity modsecurity-crs -y
 ```
 
 ### Step 2 - Configuring ModSecurity and Nginx

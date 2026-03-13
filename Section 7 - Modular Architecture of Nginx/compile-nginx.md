@@ -2,11 +2,15 @@
 
 https://nginx.org/en/download.html
 
+### Base Requirement:
+
+Fresh Ubuntu LTS server without Nginx installed.
+
 ### Step 1 - Install Packages
 ```sh
 apt update
 
-apt -y install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev net-tools
+apt -y install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev net-tools libgd-dev
 ```
 ### Step 2 - Download Nginx
 ```sh
@@ -68,4 +72,12 @@ ExecStop=/bin/sh -c "/bin/kill -s TERM $(/bin/cat /run/nginx.pid)"
 
 [Install]
 WantedBy=multi-user.target
+```
+
+### Step 6 - Testing
+
+```sh
+curl localhost
+
+nginx -V
 ```
